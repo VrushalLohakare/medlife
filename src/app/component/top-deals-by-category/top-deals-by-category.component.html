@@ -1,0 +1,34 @@
+<div class="container-fluid bg-primary text-white p-2">
+    <div class="row">
+        <span class="fs-5 fw-semibold ms-5"><i class="bi bi-arrow-left" routerLink="/home"></i>&nbsp;&nbsp;Top Deals</span>
+    </div>
+
+</div>
+<div class="container-fluid p-3">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            Showing Medicine Availability and Price in
+        </div>
+    </div>
+</div>
+<div class="container mt-5">
+    <h5 class="ms-3 fs-3 fw-semibold">Shop By Category</h5>
+    <div class="row mt-4 ms-3" *ngFor="let item of topDealsByCategoryData">
+        <div class="card" style="width: 16rem; height: 21rem;">
+            <div class="card-body">
+                <h5 class="card-title text-center category-name">{{item.categoryName}}</h5>
+            </div>
+        </div>
+        <div class="card rounded-3 carouselSlide ms-4" *ngFor="let item of item.top_deals">
+            <img [src]="item.productImageSlug[0]" class="ms-5" alt="..." height="170" width="170">
+            <div class="card-body">
+              <h5 class="card-title card-description">{{item.name}}</h5>
+              <p class="card-text">{{item.type}}</p>
+              <p class="card-text">MRP ₹&nbsp;<span class="me-2 text-decoration-line-through"
+                  *ngIf="item.actualPrice!=item.discountPrice">{{item.actualPrice}}</span>{{item.discountPrice}}<button
+                  type="button" class="btn btn-outline-primary ms-3 rounded-4 float-end">ADD</button>
+              </p>
+            </div>
+          </div>
+    </div>
+</div>

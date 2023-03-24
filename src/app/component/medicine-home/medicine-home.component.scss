@@ -1,0 +1,27 @@
+.medicine-heading{
+    background-color: rgb(74, 139, 245);
+    height: 180px;
+    font-family:sans-serif;
+}
+#med-heading{
+    position: relative;
+    top: 30px;
+}
+.search-pincode{
+    min-width:15%;
+    padding:15px;
+}
+.input-group{
+    width: 94%;
+    box-shadow: 0px 4px 10px 0px rgb(0 0 0/16%);
+    position: relative;
+    bottom: 30px;
+
+    .input-group-text{
+    font-size: 16px;
+    }
+}
+.medicine-page-image{
+    width:90%;
+    margin-left:35px;
+}

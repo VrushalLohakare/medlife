@@ -1,0 +1,139 @@
+.gold-text {
+    font-weight: 600;
+    color: goldenrod;
+}
+
+.border {
+    border-radius: 15px;
+    height: 110px;
+
+}
+
+.container-box {
+    width: 75%;
+    height: 115px;
+    border-radius: 60px;
+    background-repeat: no-repeat;
+}
+
+.dot {
+    color: blue;
+    position: relative;
+    left: 10px;
+}
+
+.heading {
+    width: 25%;
+    height: 50px;
+    align-content: center;
+    margin-left: 80px;
+
+}
+
+.consult {
+    text-align: center;
+}
+
+.medi {
+
+    color: #1778f2;
+
+    height: 32px;
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.display-center {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-l-0 {
+    margin-left: 0 !important;
+}
+
+.Buddy {
+    color: red;
+    height: 32px;
+    line-height: 30px;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+.rb-gradient-text {
+    background: linear-gradient(104deg,#4285f4 4%,#fe2814 35%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.clearfix{
+    clear: both;
+
+   
+}
+.Consultation{
+    font-size: 22px;
+    line-height: 25px!important;
+    color: #262c67;
+    font-weight: 600;
+}
+
+.gold{
+   background-color: gold;
+   border-radius: 15px;
+   font-weight: 400;
+   
+}
+.card-img-top{
+
+    height: 100px;
+    width: 100px;
+}
+
+.card{
+    border: transparent;
+    border-radius: 50px;
+    height:300px;
+    width:260px;
+    background-color:rgba(128, 128, 128, 0.099);
+    
+}
+.card-title{
+    background: linear-gradient(104deg,#4285f4 4%,#fe2814 35%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.position-card{
+    position: relative;
+    left:9rem;
+}
+
+.Insurance-text{
+    color: #262c67;
+}
+
+.Insurance-card {
+  height:16rem; 
+  width:13rem; 
+}
+.insurance-image {
+    height: 70px;
+    width: 70px;
+}
+
+.card-title-insurance{
+    color: #262c67;
+}
+.d-block-advertize{
+    height:20%;
+    width:40%;
+}

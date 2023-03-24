@@ -1,0 +1,26 @@
+<div class="container-fluid bg-primary text-white p-2">
+    <div class="row">
+        <span class="fs-5 fw-semibold ms-5"><i class="bi bi-arrow-left" routerLink="/home"></i>&nbsp;&nbsp;Top Deals</span>
+    </div>
+
+</div>
+<div class="container-fluid p-3 heading-background">
+    <div class="row">
+        <div class="col-md-6 text-center">
+            Showing Medicine Availability and Price in
+        </div>
+    </div>
+</div>
+<div class="container w-75 rounded-4 shadow mt-5 p-3 ">
+    <div class="row">
+        <div class="col-md-6">
+         <img [src]="productDetails.productImageSlug[0]" height="300" width="400">
+        </div>
+        <div class="col-md-4">
+        <h4>{{productDetails.description}}</h4>
+        <p><span class="fw-bold">Brand Name :</span> {{productDetails.brand}}</p>
+        <p><span class="fw-bold">Composition : </span>{{productDetails.composition}}</p>
+        </div>
+    </div>
+
+</div>
