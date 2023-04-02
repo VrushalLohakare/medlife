@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { Observable } from 'rxjs';
-import { HttpService } from 'src/app/core/http.service';
+import { CartService } from 'src/app/cart/cart.service';
+import { HttpService } from 'src/app/core/services/http.service';
+
 
 @Component({
   selector: 'app-top-deals',
@@ -12,7 +14,7 @@ export class TopDealsComponent implements OnInit{
    
   topDeals!:Observable<any>
 
-  constructor(private http:HttpService){}
+  constructor(private http:HttpService,private cart:CartService){}
   
   ngOnInit(): void {
     this.gettopDealData();
@@ -46,5 +48,11 @@ export class TopDealsComponent implements OnInit{
     this.topDeals= this.http.getDataFromServer("top-deals");
     console.log(this.topDeals);
   }
+
+  addToCart(item:any){
+    this.cart.addItemToCart(item);
+  }
+
+  
 }
 

@@ -1,5 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-import { HttpService } from 'src/app/core/http.service';
+import { HttpService } from 'src/app/core/services/http.service';
 
 @Component({
   selector: 'app-medicine-home',

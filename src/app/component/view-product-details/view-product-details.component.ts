@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { HttpService } from 'src/app/core/http.service';
+import { HttpService } from 'src/app/core/services/http.service';
 
 @Component({
   selector: 'app-view-product-details',

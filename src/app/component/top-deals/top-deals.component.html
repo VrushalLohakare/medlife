@@ -9,7 +9,7 @@
             <p class="card-text">{{item.type}}</p>
             <p class="card-text">MRP ₹&nbsp;<span class="me-2 text-decoration-line-through"
                 *ngIf="item.actualPrice!=item.discountPrice">{{item.actualPrice}}</span>{{item.discountPrice}}<button
-                type="button" class="btn btn-outline-primary ms-3 rounded-4 float-end">ADD</button>
+                type="button" class="btn btn-outline-primary ms-3 rounded-4 float-end" (click)="addToCart(item)">ADD</button>
             </p>
           </div>
         </div>

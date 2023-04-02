@@ -10,10 +10,13 @@ import { MedicineHomeComponent } from './component/medicine-home/medicine-home.c
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { TopDealsComponent } from './component/top-deals/top-deals.component';
-import{HttpClientModule} from '@angular/common/http'
-import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http'
+import { FormsModule} from '@angular/forms';
 import { TopDealsByCategoryComponent } from './component/top-deals-by-category/top-deals-by-category.component';
 import { ViewProductDetailsComponent } from './component/view-product-details/view-product-details.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -23,6 +26,8 @@ import { ViewProductDetailsComponent } from './component/view-product-details/vi
     TopDealsComponent,
     TopDealsByCategoryComponent,
     ViewProductDetailsComponent,
+
+   
     
   ],
   imports: [
@@ -32,9 +37,11 @@ import { ViewProductDetailsComponent } from './component/view-product-details/vi
     BrowserAnimationsModule,
     CarouselModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
